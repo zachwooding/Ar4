@@ -6,7 +6,7 @@ export class ARClickability {
   computeIntersects: (DOMEvent: any, objects: any) => any;
   onResize: () => any;
   update: () => any;
-};
+}
 
 export class ArBaseControls {
   constructor(object3d: any);
@@ -17,7 +17,7 @@ export class ArBaseControls {
   dispatchEvent: (event: any) => {};
   name: () => {};
   update: () => {};
-};
+}
 
 export class ArMarkerCloak {
   constructor(videoTexture: any);
@@ -43,8 +43,7 @@ export class ArMultiMarkerControls {
   constructor(arToolkitContext: any, object3d: any, parameters: any);
 }
 
-export const ArMultiMarkerUtils = {
-}
+//export const ArMultiMarkerUtils = {}
 
 export class ArSmoothedControls {
   constructor(object3d: any, parameters: any);

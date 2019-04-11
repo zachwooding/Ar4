@@ -3,6 +3,7 @@ import { CameraPreview, CameraPreviewPictureOptions, CameraPreviewOptions, Camer
 import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
 import { AlertController } from '@ionic/angular';
 import { Platform } from '@ionic/angular';
+import {Router } from '@angular/router';
 
 @Component({
   selector: 'app-ar-cam',
@@ -15,14 +16,15 @@ export class ArCamPage implements OnInit {
 
 
   ngOnInit() {
+    this.openAR();
   }
 
   openAR(){
     var cameraPreviewOpts: CameraPreviewOptions = {
         x: 0,
         y: 0,
-        width: 1000,
-        height: 1000,
+        width: window.screen.width,
+        height: window.screen.height,
         camera: 'rear',
         tapPhoto: false,
         previewDrag: false,

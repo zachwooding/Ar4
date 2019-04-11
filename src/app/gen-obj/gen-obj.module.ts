@@ -5,13 +5,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ArCamPage } from './ar-cam.page';
-
+import { GenObjPage } from './gen-obj.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: ArCamPage
+    component: GenObjPage
   }
 ];
 
@@ -20,9 +19,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    
     RouterModule.forChild(routes)
   ],
-  declarations: [ArCamPage]
+  declarations: [GenObjPage]
 })
-export class ArCamPageModule {}
+export class GenObjPageModule {}

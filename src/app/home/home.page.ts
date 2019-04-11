@@ -22,7 +22,7 @@ export class HomePage implements OnInit  {
 
   openARCamera(){
 
-    this.router.navigate(['../ar-cam'])
+    this.router.navigate(['../ar-cam/'])
   }
 
   openNormalCamera(){

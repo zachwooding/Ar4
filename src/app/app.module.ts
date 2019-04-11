@@ -13,6 +13,9 @@ import { CameraPreview, CameraPreviewPictureOptions, CameraPreviewOptions, Camer
 import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
 import { AlertController } from '@ionic/angular';
 import { Platform } from '@ionic/angular';
+import {ComponentsModule} from './components/components.module';
+//import {ArComponent} from './components/ar-component/ar-component.component';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -25,6 +28,7 @@ import { Platform } from '@ionic/angular';
     CameraPreview,
     AlertController,
     Platform,
+    ComponentsModule,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
